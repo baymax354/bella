@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport"content="whidth=device-width, initial-scale=1.0">
+  </head>
+
+  <body>
+  <!-- video de fundo -->
+   <video id="bg-video" autoplay muted loop>
+    <source src="video.mp4" type="video/mp4">
+   </video>
+  </body>
+
+  <!-- pontuação -->
+   <div id="pontuacao">💖 0</div>
+
+   <!-- mensagem de amor -->
+    <div id="mensagem"></div>
+
+    <!-- tela de senha -->
+     <div id="tela-senha">
+        <h2>Digite a senha</h2>
+        <input type="password" id="senhaInput" placeholder="senha aqui">
+        <button id="entrarBtn">Entrar</button>
+        <p id="erroMsg"></p>
+     </div>
+
+     <!-- conteudo do site -->
+      <div id="conteudo-site" style="display:none;">
+        <!-- aqui vai o seu video de fundo e jogo -->
+      </div>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  
+</html>
