@@ -1,0 +1,96 @@
+#bg-video {
+    position: fixed;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* pontuação */
+#potuacao {
+    position: fixed;
+    inset-block-start: 20px;
+    inset-inline-start: 50%;
+    transform: translateX(-50%);
+    font-size: 28px;
+    color: white;
+    font-weight: bold;
+    z-index: 10;
+    text-shadow: 2px 2px 5px black;
+}
+
+/* mensagem de amor */
+#mensagem {
+    position: fixed;
+    inset-block-start: 50%;
+    inset-inline-start: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: pink;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px red;
+    opacity: 0;
+    transition: opacity 0.6s ease-out;
+    z-index: 10;
+}
+
+/* coração caindo */
+.coracao {
+    position: fixed;
+    font-size: 32px;
+    cursor: pointer;
+    user-select: none;
+    animation: cair linear;
+}
+
+/* animação da queda */
+@keyframes cair {
+    from { inset-block-start: -50px; }
+    to { inset-block-start: 100vh; }
+}
+
+#tela-senha {
+    position: fixed;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+    inline-size: 100%;
+    block-size: 100%;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    z-index: 100;
+}
+
+#tela-senha input {
+    padding: 10px;
+    font-size: 16px;
+    margin-block-start: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+#tela-senha button {
+    margin-block-start: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background: #33c;
+    color: white;
+    cursor: pointer;
+}
+
+#tela-senha button:hover {
+    background: #55f;
+}
+
+#erroMsg {
+    color: red;
+    margin-block-start: 10px;
+}
